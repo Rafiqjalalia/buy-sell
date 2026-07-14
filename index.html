@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hazro Buy & Sell — واٹس ایپ گروپ جوائن کریں</title>
+<meta name="description" content="Hazro Buy & Sell — اپنے علاقے میں خریدو فروخت کے لیے واٹس ایپ گروپ اور فیس بک پیج جوائن کریں۔">
+<link rel="canonical" href="https://hazrobuyandsell.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hazro Buy & Sell — واٹس ایپ گروپ جوائن کریں">
+<meta property="og:description" content="اپنے علاقے میں خریدو فروخت کے لیے واٹس ایپ گروپ اور فیس بک پیج جوائن کریں۔">
+<meta property="og:image" content="logo.png">
+<meta property="og:url" content="https://hazrobuyandsell.github.io/">
+<meta property="og:site_name" content="Hazro Buy & Sell">
+<meta property="og:locale" content="ur_PK">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper:   '#F7F2E7',
+          ink:     '#1B2A2E',
+          teal:    { DEFAULT:'#14555A', dark:'#0E3E42', light:'#1D6E74' },
+          saffron: { DEFAULT:'#E8A33D', dark:'#C9822A', light:'#F3C275' },
+          brick:   '#B4482F',
+          wa:      { DEFAULT:'#25D366', dark:'#1DA851' },
+          fb:      { DEFAULT:'#1877F2', dark:'#1259B8' },
+        },
+        fontFamily: {
+          nastaliq: ["'Noto Nastaliq Urdu'","serif"],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  body{
+    background-color:#F7F2E7;
+    background-image: radial-gradient(#14555A0d 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+  .signboard{
+    border: 3px solid #1B2A2E;
+    box-shadow: 6px 6px 0px 0px #1B2A2E;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .signboard:hover{
+    transform: translate(-3px,-3px);
+    box-shadow: 9px 9px 0px 0px #1B2A2E;
+  }
+  ::selection{ background:#E8A33D; color:#1B2A2E; }
+  .wa-pulse{
+    box-shadow: 0 0 0 0 rgba(37,211,102,.6);
+    animation: waPulse 2.2s infinite;
+  }
+  @keyframes waPulse{
+    0%{ box-shadow:0 0 0 0 rgba(37,211,102,.55); }
+    70%{ box-shadow:0 0 0 16px rgba(37,211,102,0); }
+    100%{ box-shadow:0 0 0 0 rgba(37,211,102,0); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; }
+  }
+  :focus-visible{ outline: 3px solid #E8A33D; outline-offset: 3px; }
+  .faq-toggle[aria-expanded="true"] .faq-icon{ transform: rotate(45deg); }
+  .faq-panel{ display:grid; grid-template-rows:0fr; transition: grid-template-rows .25s ease; }
+  .faq-panel.open{ grid-template-rows:1fr; }
+  .faq-panel > div{ overflow:hidden; }
+</style>
+</head>
+
+<body class="font-nastaliq text-ink antialiased min-h-screen flex flex-col">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:right-2 focus:bg-saffron focus:text-ink focus:px-4 focus:py-2 focus:rounded z-[100]">مرکزی مواد پر جائیں</a>
+
+<main id="main" class="flex-1 px-5 py-14 flex flex-col items-center gap-16">
+  <div class="w-full max-w-lg">
+
+    <!-- Brand mark -->
+    <div class="flex flex-col items-center text-center mb-8">
+      <span class="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden signboard mb-5 bg-ink">
+        <img src="logo.png" alt="Hazro Buy & Sell logo" width="320" height="320" class="w-full h-full object-cover" loading="eager">
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-bold leading-relaxed">
+        <span dir="ltr" class="inline-block">Hazro Buy &amp; Sell</span>
+      </h1>
+      <p class="mt-3 text-lg sm:text-xl text-ink/70 leading-loose">
+        اپنے علاقے میں خریدو فروخت کا سب سے آسان اور مفت طریقہ
+      </p>
+      <p class="mt-4 text-base sm:text-lg text-ink/80 leading-loose max-w-md">
+        روزانہ سینکڑوں لوگ یہاں موبائل، گاڑی، فرنیچر، پراپرٹی اور مزید چیزیں خرید و فروخت کر رہے ہیں۔
+        دیر نہ کریں — ابھی جوائن کریں اور اپنے علاقے کے قابلِ اعتماد خریداروں اور فروخت کاروں سے جڑیں۔
+      </p>
+    </div>
+
+    <!-- Links card -->
+    <div class="signboard bg-paper rounded-3xl p-6 sm:p-8 flex flex-col gap-4">
+
+      <a href="https://chat.whatsapp.com/CHlJh6DjXCO3YCdOYXzEEw?s=sh&p=a&ilr=0&amv=1"
+         target="_blank" rel="noopener noreferrer"
+         class="wa-pulse group flex items-center gap-4 bg-wa hover:bg-wa-dark text-white rounded-2xl px-6 py-5 transition-colors">
+        <svg class="w-9 h-9 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.87 9.87 0 0 0 4.7 1.2h.01c5.46 0 9.9-4.45 9.9-9.9C21.96 6.45 17.5 2 12.04 2Zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.94-4.37-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.4.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .9 2.14.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.27.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.23 1.38.27.14.43.11.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.19.5.3.07.12.07.66-.17 1.34Z"/></svg>
+        <span class="flex-1 text-right">
+          <span class="block text-xl font-bold leading-relaxed">واٹس ایپ گروپ جوائن کریں</span>
+          <span class="block text-sm text-white/80">خریدنے اور بیچنے کے لیے ابھی شامل ہوں</span>
+        </span>
+        <svg class="w-5 h-5 shrink-0 rotate-180 opacity-80 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </a>
+      <p class="text-center text-xs text-ink/50 -mt-2">🔥 روزانہ نئے ممبرز شامل ہو رہے ہیں — کہیں دیر نہ ہو جائے!</p>
+
+      <div class="h-px bg-ink/10 my-1"></div>
+
+      <!-- Official-style Facebook button -->
+      <a href="https://web.facebook.com/people/Forsale/61591704938320/"
+         target="_blank" rel="noopener noreferrer" dir="ltr"
+         class="group flex items-center gap-3 bg-fb hover:bg-fb-dark text-white rounded-full px-5 py-4 transition-colors font-sans">
+        <span class="w-9 h-9 shrink-0 rounded-full bg-white flex items-center justify-center">
+          <svg class="w-5 h-5 text-fb" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+        </span>
+        <span class="flex-1 text-left">
+          <span class="block text-base font-bold leading-tight">Facebook</span>
+          <span class="block text-xs text-white/80 leading-tight">Follow our page for daily listings</span>
+        </span>
+        <svg class="w-4 h-4 shrink-0 opacity-80 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </a>
+
+    </div>
+
+    <!-- Quick benefit chips -->
+    <div class="mt-7 flex flex-wrap justify-center gap-2.5">
+      <span class="bg-saffron/25 border border-saffron-dark text-teal-dark text-sm font-semibold px-4 py-1.5 rounded-full">مفت جوائن</span>
+      <span class="bg-saffron/25 border border-saffron-dark text-teal-dark text-sm font-semibold px-4 py-1.5 rounded-full">لوکل خریدار و فروخت کار</span>
+      <span class="bg-saffron/25 border border-saffron-dark text-teal-dark text-sm font-semibold px-4 py-1.5 rounded-full">آسان رابطہ</span>
+    </div>
+
+    <p class="mt-8 text-center text-ink/60 text-base leading-loose">
+      نہ کوئی فیس، نہ کوئی جھنجھٹ — بس ایک کلک اور آپ اپنے علاقے کی سب سے بڑی خرید و فروخت کمیونٹی کا حصہ ہیں۔
+    </p>
+
+  </div>
+
+  <!-- ============ WHY JOIN ============ -->
+  <section class="w-full max-w-3xl">
+    <div class="text-center mb-9">
+      <h2 class="text-3xl sm:text-4xl font-bold text-brick">جوائن کرنے کے فائدے</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="signboard bg-paper rounded-2xl p-5 flex items-start gap-4">
+        <span class="w-11 h-11 shrink-0 rounded-full bg-saffron/30 border border-saffron-dark flex items-center justify-center text-teal-dark font-bold text-lg">✓</span>
+        <div>
+          <h3 class="font-bold text-lg leading-relaxed">قابلِ اعتماد لوکل مارکیٹ</h3>
+          <p class="text-sm text-ink/65 leading-loose mt-1">ہر ڈیل حضرو کے حقیقی لوگوں کے درمیان ہوتی ہے — کسی اجنبی سے نہیں۔</p>
+        </div>
+      </div>
+      <div class="signboard bg-paper rounded-2xl p-5 flex items-start gap-4">
+        <span class="w-11 h-11 shrink-0 rounded-full bg-saffron/30 border border-saffron-dark flex items-center justify-center text-teal-dark font-bold text-lg">✓</span>
+        <div>
+          <h3 class="font-bold text-lg leading-relaxed">مکمل مفت رکنیت</h3>
+          <p class="text-sm text-ink/65 leading-loose mt-1">کوئی فیس نہیں، کوئی سبسکرپشن نہیں — بس جوائن کریں اور فائدہ اٹھائیں۔</p>
+        </div>
+      </div>
+      <div class="signboard bg-paper rounded-2xl p-5 flex items-start gap-4">
+        <span class="w-11 h-11 shrink-0 rounded-full bg-saffron/30 border border-saffron-dark flex items-center justify-center text-teal-dark font-bold text-lg">✓</span>
+        <div>
+          <h3 class="font-bold text-lg leading-relaxed">مضبوط لوکل کمیونٹی</h3>
+          <p class="text-sm text-ink/65 leading-loose mt-1">حضرو اور نواحی علاقوں کے لیے — خود ملاقات کریں، چیز دیکھیں، اطمینان سے ادائیگی کریں۔</p>
+        </div>
+      </div>
+      <div class="signboard bg-paper rounded-2xl p-5 flex items-start gap-4">
+        <span class="w-11 h-11 shrink-0 rounded-full bg-saffron/30 border border-saffron-dark flex items-center justify-center text-teal-dark font-bold text-lg">✓</span>
+        <div>
+          <h3 class="font-bold text-lg leading-relaxed">آسان خریدو فروخت</h3>
+          <p class="text-sm text-ink/65 leading-loose mt-1">بس ایک تصویر، قیمت اور نمبر پوسٹ کریں — کسی ایپ کی ضرورت نہیں۔</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REPEATED PROMINENT CTA STRIP ============ -->
+  <section class="w-full max-w-3xl">
+    <div class="signboard bg-teal rounded-3xl px-6 py-9 sm:px-10 sm:py-10 text-paper text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold leading-relaxed mb-2">دیر کس بات کی؟ ابھی شامل ہوں</h2>
+      <p class="text-paper/75 text-base leading-loose mb-7 max-w-md mx-auto">
+        حضرو کی سب سے بڑی خرید و فروخت کمیونٹی کا حصہ بنیں اور روزانہ نئی پوسٹس سے فائدہ اٹھائیں۔
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://chat.whatsapp.com/CHlJh6DjXCO3YCdOYXzEEw?s=sh&p=a&ilr=0&amv=1"
+           target="_blank" rel="noopener noreferrer"
+           class="wa-pulse w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-wa hover:bg-wa-dark text-white font-bold text-base px-7 py-4 rounded-full transition-colors">
+          <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.87 9.87 0 0 0 4.7 1.2h.01c5.46 0 9.9-4.45 9.9-9.9C21.96 6.45 17.5 2 12.04 2Zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.94-4.37-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.4.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .9 2.14.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.27.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.23 1.38.27.14.43.11.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.19.5.3.07.12.07.66-.17 1.34Z"/></svg>
+          واٹس ایپ گروپ جوائن کریں
+        </a>
+        <a href="https://web.facebook.com/people/Forsale/61591704938320/"
+           target="_blank" rel="noopener noreferrer" dir="ltr"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-fb hover:bg-fb-dark text-white font-bold text-base px-7 py-4 rounded-full transition-colors font-sans">
+          <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+          Facebook Page
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="w-full max-w-2xl">
+    <div class="text-center mb-8">
+      <span class="text-brick font-bold text-sm">اکثر پوچھے گئے سوالات</span>
+      <h2 class="text-3xl sm:text-4xl font-bold mt-1">سوال و جواب</h2>
+    </div>
+
+    <div class="divide-y-2 divide-ink/10 border-y-2 border-ink/10" id="faqList">
+
+      <div class="py-1">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 py-4 text-right" aria-expanded="false">
+          <span class="font-bold text-lg">کیا جوائن کرنا مفت ہے؟</span>
+          <span class="faq-icon shrink-0 text-2xl leading-none text-brick transition-transform">+</span>
+        </button>
+        <div class="faq-panel"><div><p class="pb-4 text-ink/65 leading-loose">جی ہاں، واٹس ایپ گروپ اور فیس بک پیج دونوں جوائن کرنا بالکل مفت ہے۔</p></div></div>
+      </div>
+
+      <div class="py-1">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 py-4 text-right" aria-expanded="false">
+          <span class="font-bold text-lg">میں اپنی چیز کیسے فروخت کروں؟</span>
+          <span class="faq-icon shrink-0 text-2xl leading-none text-brick transition-transform">+</span>
+        </button>
+        <div class="faq-panel"><div><p class="pb-4 text-ink/65 leading-loose">گروپ میں تصویر، قیمت اور مختصر تفصیل شیئر کریں — آپ کی پوسٹ فوراً لوکل خریداروں تک پہنچ جائے گی۔</p></div></div>
+      </div>
+
+      <div class="py-1">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 py-4 text-right" aria-expanded="false">
+          <span class="font-bold text-lg">کیا ڈیلیوری کی سہولت موجود ہے؟</span>
+          <span class="faq-icon shrink-0 text-2xl leading-none text-brick transition-transform">+</span>
+        </button>
+        <div class="faq-panel"><div><p class="pb-4 text-ink/65 leading-loose">یہ ایک لوکل کمیونٹی ہے — خریدار و فروخت کار خود ملاقات کر کے چیز چیک کریں اور ادائیگی کریں۔</p></div></div>
+      </div>
+
+      <div class="py-1">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 py-4 text-right" aria-expanded="false">
+          <span class="font-bold text-lg">فروخت کنندہ سے رابطہ کیسے کروں؟</span>
+          <span class="faq-icon shrink-0 text-2xl leading-none text-brick transition-transform">+</span>
+        </button>
+        <div class="faq-panel"><div><p class="pb-4 text-ink/65 leading-loose">ہر پوسٹ کے ساتھ نمبر موجود ہوتا ہے — اس پر براہ راست واٹس ایپ میسج کریں۔</p></div></div>
+      </div>
+
+      <div class="py-1">
+        <button class="faq-toggle w-full flex items-center justify-between gap-4 py-4 text-right" aria-expanded="false">
+          <span class="font-bold text-lg">کیا یہ صرف حضرو کے لیے ہے؟</span>
+          <span class="faq-icon shrink-0 text-2xl leading-none text-brick transition-transform">+</span>
+        </button>
+        <div class="faq-panel"><div><p class="pb-4 text-ink/65 leading-loose">بنیادی طور پر حضرو کے لیے بنایا گیا ہے، مگر آس پاس کے علاقوں کے لوگ بھی خوش آمدید ہیں۔</p></div></div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="text-center pb-8 px-5">
+  <div class="flex items-center justify-center gap-5 mb-3 text-sm font-semibold text-teal-dark">
+    <a href="about.html" class="hover:underline">ہمارے بارے میں</a>
+    <span class="text-ink/30">|</span>
+    <a href="privacy.html" class="hover:underline">پرائیویسی پالیسی</a>
+  </div>
+  <p class="text-sm text-ink/50">© <span id="year"></span> حضرو بائے اینڈ سیل — تمام حقوق محفوظ ہیں</p>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+<a href="https://chat.whatsapp.com/CHlJh6DjXCO3YCdOYXzEEw?s=sh&p=a&ilr=0&amv=1"
+   target="_blank" rel="noopener noreferrer" aria-label="واٹس ایپ گروپ جوائن کریں"
+   class="wa-pulse fixed bottom-5 left-5 z-50 w-16 h-16 rounded-full bg-wa hover:bg-wa-dark flex items-center justify-center shadow-xl transition-transform hover:scale-105">
+  <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.87 9.87 0 0 0 4.7 1.2h.01c5.46 0 9.9-4.45 9.9-9.9C21.96 6.45 17.5 2 12.04 2Zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.94-4.37-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.4.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .9 2.14.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.27.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.23 1.38.27.14.43.11.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.13.44.19.5.3.07.12.07.66-.17 1.34Z"/></svg>
+</a>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.querySelectorAll(".faq-toggle").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const panel = btn.nextElementSibling;
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      panel.classList.toggle("open", !isOpen);
+    });
+  });
+</script>
+
+</body>
+</html>
